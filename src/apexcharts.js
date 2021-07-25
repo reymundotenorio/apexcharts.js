@@ -345,9 +345,9 @@ export default class ApexCharts {
    * Destroy the chart instance by removing all elements which also clean up event listeners on those elements.
    */
   destroy() {
-    window.removeEventListener('resize', this.windowResizeHandler)
+    // window.removeEventListener('resize', this.windowResizeHandler)
 
-    window.removeResizeListener(this.el.parentNode, this.parentResizeHandler)
+    // window.removeResizeListener(this.el.parentNode, this.parentResizeHandler)
     // remove the chart's instance from the global Apex._chartInstances
     const chartID = this.w.config.chart.id
     if (chartID) {

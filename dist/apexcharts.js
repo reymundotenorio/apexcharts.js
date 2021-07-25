@@ -30852,9 +30852,9 @@
     }, {
       key: "destroy",
       value: function destroy() {
-        window.removeEventListener('resize', this.windowResizeHandler);
-        window.removeResizeListener(this.el.parentNode, this.parentResizeHandler); // remove the chart's instance from the global Apex._chartInstances
-
+        // window.removeEventListener('resize', this.windowResizeHandler)
+        // window.removeResizeListener(this.el.parentNode, this.parentResizeHandler)
+        // remove the chart's instance from the global Apex._chartInstances
         var chartID = this.w.config.chart.id;
 
         if (chartID) {
