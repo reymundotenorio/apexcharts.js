@@ -68,8 +68,8 @@ export default class ApexCharts {
         }
 
         this.events.fireEvent('beforeMount', [this, this.w])
-        window.addEventListener('resize', this.windowResizeHandler)
-        window.addResizeListener(this.el.parentNode, this.parentResizeHandler)
+        // window.addEventListener('resize', this.windowResizeHandler)
+        // window.addResizeListener(this.el.parentNode, this.parentResizeHandler)
 
         let graphData = this.create(this.w.config.series, {})
         if (!graphData) return resolve(this)

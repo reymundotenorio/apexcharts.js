@@ -30601,10 +30601,9 @@
               beforeMount(_this, _this.w);
             }
 
-            _this.events.fireEvent('beforeMount', [_this, _this.w]);
+            _this.events.fireEvent('beforeMount', [_this, _this.w]); // window.addEventListener('resize', this.windowResizeHandler)
+            // window.addResizeListener(this.el.parentNode, this.parentResizeHandler)
 
-            window.addEventListener('resize', _this.windowResizeHandler);
-            window.addResizeListener(_this.el.parentNode, _this.parentResizeHandler);
 
             var graphData = _this.create(_this.w.config.series, {});
 
